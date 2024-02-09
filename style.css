@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+header {
+  background: #ddd;
+  width: 375px;
+  margin: 0 0 16px 16px;
+}
+
+header img {
+  margin: 16px 0 0 16px;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 8px 16px 0 16px;
+}
+
+section {
+  margin: 32px 32px 16px 16px;
+  width: 375px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section div {
+  margin: 8px 8px 16px 16px;
+}
+
+section a {
+  text-decoration: none;
+}
+ 
+section p {
+  margin: 0;
+  text-align: center;
+  color: black;
+} 
+
+footer {
+  background: #eee;
+  width: 375px;
+  margin: 16px 0 16px 16px;
+}
+
+footer img {
+  animation-name: run;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+}
+
+@keyframes run {
+  0% {
+    transform: translate(0,0)
+ }
+ 100% {
+   transform: translate(330px,0)
+ }
+}
+
+footer div {
+  margin-top: 16px
+}
+
+@media (orientation: landscape){
+  body {
+    width: 100%;
+  }
+}
